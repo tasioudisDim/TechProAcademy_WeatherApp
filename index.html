@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Widget</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div class="weather-widget">
+    <div class="controls">
+      <div class="unit-toggle">
+        <button id="celsiusBtn" class="active">°C</button>
+        <button id="fahrenheitBtn">°F</button>
+      </div>
+
+      <div class="mode-toggle">
+        <div class="emoji-labels">
+          <span>☀️</span>
+          <span>🌙</span>
+          <span>🎉</span>
+        </div>
+        <div class="slider-wrapper small">
+          <div class="slider" id="modeSlider">
+            <div class="thumb"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="day-select">
+        <select id="dayDropdown"></select>
+      </div>
+    </div>
+
+    <div class="location-name">Thessaloniki</div>
+
+    <div class="weather-main">
+      <div class="weather-info">
+        <h1 id="temperature" class="temperature" data-celsius="">--°C</h1>
+        <p id="description">Loading...</p>
+        <img id="weather-icon" src="" alt="Weather Icon" class="weather-icon" />
+      </div>
+    </div>
+
+    <div class="weather-cards">
+      <div class="card">Feels Like: <span id="feels-like" class="feels-like" data-celsius="">--°C</span></div>
+      <div class="card">Wind: <span id="wind">-- m/s</span></div>
+      <div class="card">Gusts: <span id="gusts">-- m/s</span></div>
+      <div class="card">Direction: <span id="wind-deg">--°</span></div>
+      <div class="card">Humidity: <span id="humidity">--%</span></div>
+      <div class="card">Pressure: <span id="pressure">-- hPa</span></div>
+    </div>
+
+    <div class="chart-container">
+      <div class="chart-title">Weekly Variation</div>
+      <canvas id="tempChart"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
