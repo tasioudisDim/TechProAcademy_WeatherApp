@@ -18,6 +18,6 @@ This is a responsive weather widget built using HTML, CSS, and JavaScript. It fe
 - Unit toggle between Celsius and Fahrenheit
 - Visual themes: Light mode, Dark mode, and Party mode
 - Fully responsive and styled with modern design principles
-- Custom local weather icons mapped from Open-Meteo weather codes
+
 
 This project was created as the final project for the TechPro Academy A' Semester.
